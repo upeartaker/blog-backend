@@ -4,17 +4,22 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "dev": "nodemon ./bin/www"
+    "dev": "nodemon ./bin/www",
+    "graphQL": "nodemon ./graphql/graphqlServer.js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
     "express": "~4.16.0",
+    "express-session": "^1.16.2",
     "http-errors": "~1.6.2",
     "jade": "~1.11.0",
+    "mongoose": "^5.6.2",
     "morgan": "~1.9.0"
   },
   "devDependencies": {
+    "express-graphql": "^0.8.0",
+    "graphql": "^14.4.1",
     "nodemon": "^1.18.11"
   }
 }
